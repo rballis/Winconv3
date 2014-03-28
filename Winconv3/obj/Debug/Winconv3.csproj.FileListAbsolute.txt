@@ -1,0 +1,11 @@
+C:\Users\rballis\Develop\Winconv3\Winconv3\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rballis\Develop\Winconv3\Winconv3\obj\Debug\Window1.baml
+C:\Users\rballis\Develop\Winconv3\Winconv3\obj\Debug\Window1.g.cs
+C:\Users\rballis\Develop\Winconv3\Winconv3\obj\Debug\App.g.cs
+C:\Users\rballis\Develop\Winconv3\Winconv3\obj\Debug\Winconv3_MarkupCompile.cache
+C:\Users\rballis\Develop\Winconv3\Winconv3\obj\Debug\Winconv3.g.resources
+C:\Users\rballis\Develop\Winconv3\Winconv3\obj\Debug\Winconv3.About.resources
+C:\Users\rballis\Develop\Winconv3\Winconv3\obj\Debug\Winconv3.Properties.Resources.resources
+C:\Users\rballis\Develop\Winconv3\Winconv3\obj\Debug\ResGen.read.1.tlog
+C:\Users\rballis\Develop\Winconv3\Winconv3\obj\Debug\ResGen.write.1.tlog
+C:\Users\rballis\Develop\Winconv3\Winconv3\bin\Debug\Winconv3.exe.config

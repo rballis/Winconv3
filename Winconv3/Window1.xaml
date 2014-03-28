@@ -1,0 +1,43 @@
+﻿<Window x:Class="Winconv3.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Windows Converter" Height="193" Width="420" ResizeMode="NoResize" AllowDrop="False" IsEnabled="True" Icon="file:///C:/Users/rballis/Develop/Winconv3/Winconv3/writing078.ico">
+    <Grid Height="159" Background="Orange" Width="408">
+        <Label Height="28" HorizontalAlignment="Left" Margin="9,11,0,0" Name="label1" VerticalAlignment="Top" Width="74" HorizontalContentAlignment="Right">Converting:</Label>
+        <ComboBox Margin="89,15,164,0" Name="converting" SelectionChanged="converting_SelectionChanged" Height="24" VerticalAlignment="Top" ToolTip="Chose a measerment"></ComboBox>
+        <Label Height="28" HorizontalAlignment="Left" Margin="36,47,0,0" Name="label2" VerticalAlignment="Top" Width="47" FlowDirection="LeftToRight" HorizontalContentAlignment="Right">From:</Label>
+        <TextBox Height="23" Margin="89,49,0,0" Name="valueFrom" VerticalAlignment="Top" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Width="155" ToolTip="Value from" />
+        <ComboBox Height="23" Margin="266,49,0,0" Name="unitFrom" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" SelectionChanged="unitFrom_SelectionChanged" ToolTip="Chose unit from" />
+        <Label HorizontalAlignment="Left" Margin="52,82,0,106" Name="label3" Width="31" HorizontalContentAlignment="Right">To:</Label>
+        <TextBox Height="23" Margin="89,0,164,51" Name="valueTo" VerticalAlignment="Bottom" IsReadOnly="True" HorizontalContentAlignment="Right" ToolTip="Value to" />
+        <ComboBox Height="23" Margin="0,0,22,51" Name="unitTo" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="120" SelectionChanged="unitTo_SelectionChanged" ToolTip="Chose unit to" />
+        <Label HorizontalAlignment="Left" Margin="20,118,0,14" Name="label4" Width="63" HorizontalContentAlignment="Right">Decimals:</Label>
+        <RadioButton Margin="89,0,0,21" Name="decA" GroupName="dec" Height="15" VerticalAlignment="Bottom" ToolTip="Floating point number" HorizontalAlignment="Left" Width="25" Checked="decA_Checked">
+            <RadioButton.BindingGroup>
+                <BindingGroup Name="dec" NotifyOnValidationError="False" />
+            </RadioButton.BindingGroup> f
+        </RadioButton>
+        <RadioButton Margin="117,0,0,21" Name="dec0" GroupName="dec" Height="15" VerticalAlignment="Bottom" ToolTip="Decimal points zero" HorizontalAlignment="Left" Width="25" Checked="dec0_Checked">
+            <RadioButton.BindingGroup>
+                <BindingGroup Name="dec" NotifyOnValidationError="False" />
+            </RadioButton.BindingGroup> 0</RadioButton>
+        <RadioButton Margin="145,0,0,21" Name="dec3" GroupName="dec" Height="15" VerticalAlignment="Bottom" ToolTip="Decimal points three" HorizontalAlignment="Left" Width="25" Checked="dec3_Checked">
+            <RadioButton.BindingGroup>
+                <BindingGroup Name="dec" NotifyOnValidationError="False" />
+            </RadioButton.BindingGroup> 3</RadioButton>
+        <RadioButton Margin="173,0,0,21" Name="dec6" GroupName="dec" Height="15" VerticalAlignment="Bottom" ToolTip="Decimal points six" HorizontalAlignment="Left" Width="25" Checked="dec6_Checked">
+            <RadioButton.BindingGroup>
+                <BindingGroup Name="dec" NotifyOnValidationError="False" />
+            </RadioButton.BindingGroup> 6</RadioButton>
+        <RadioButton Margin="201,0,0,21" Name="dec9" GroupName="dec" Height="15" VerticalAlignment="Bottom" ToolTip="Decimal points nine" Checked="dec9_Checked" HorizontalAlignment="Left" Width="25">
+            <RadioButton.BindingGroup>
+                <BindingGroup Name="dec" NotifyOnValidationError="False" />
+            </RadioButton.BindingGroup> 9</RadioButton>
+        <Button Margin="311,0,0,15.02" Name="about" HorizontalAlignment="Left" Width="75" Height="26" VerticalAlignment="Bottom" ToolTip="Show about box" Click="about_Click">About</Button>
+        <Label HorizontalAlignment="Left" Margin="36,0,0,48" Name="label5" Width="47" HorizontalContentAlignment="Right" Height="28" VerticalAlignment="Bottom">To:</Label>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,49,153,0" Name="cleareFrom" VerticalAlignment="Top" Width="12" Background="Red" Click="cleareFrom_Click" ToolTip="Cleare value">X</Button>
+        <Button Background="Red" Margin="0,0,153,51" Name="cleareTo" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="12" Click="cleareTo_Click" ToolTip="Cleare value">X</Button>
+        <Button Margin="108,71,0,73" Name="interChange" Background="YellowGreen" Click="interChange_Click" ToolTip="Move value to from" VerticalContentAlignment="Top" FontSize="9" Width="40" HorizontalAlignment="Left">^</Button>
+        <Button Background="YellowGreen" Margin="184,71,184,73" Name="calculate" ToolTip="Calculate" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" FontSize="9" Click="calculate_Click">=</Button>
+    </Grid>
+</Window>
